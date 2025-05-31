@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Alice</div>
+      <nav id="nav-links" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="book-btn">Book Now</button>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>From<br />$180/night</h1>
+      </div>
+      <div class="booking-form">
+        <input type="date" placeholder="Check-in" />
+        <input type="date" placeholder="Check-out" />
+        <input type="number" placeholder="Guests" />
+        <button>Book Now</button>
+      </div>
+    </section>
+
+    <section id="rooms" class="section">
+      <h2>Rooms</h2>
+      <div class="section-grid">
+        <div class="room-card">
+          <img src="../Big50/images/snooker.jpg" alt="Room1" />
+          <h3>Deluxe Rooms</h3>
+          <p>Spacious and elegant, perfect for relaxation</p>
+          <button>Book Now</button>
+        </div>
+        <div class="room-card">
+          <img src="../Big50/images/snooker.jpg" alt="Room2" />
+          <h3>Executive Suite</h3>
+          <p>Premium Suite with city views and added comfort.</p>
+          <button>Book Now</button>
+        </div>
+        <div class="room-card">
+          <img src="../Big50/images/snooker.jpg" alt="Room3" />
+          <h3>Single Room</h3>
+          <p>Cozy and efficient space for solo travelers</p>
+          <button>Book Now</button>
+        </div>
+        <div class="room-card">
+          <img src="../Big50/images/snooker.jpg" alt="Room3" />
+          <h3>Family Room</h3>
+          <p>Spacious room ideal for small groups or families.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="amenities" class="section">
+      <h2>Amenities</h2>
+      <div class="section-grid">
+        <div class="amenities-card">
+          <img src="" alt="Free Wi-Fi" />
+          <h3>Free Wi-Fi</h3>
+          <p>High-speed internet available in all rooms and public areas.</p>
+        </div>
+        <div class="amenities-card">
+          <img src="" alt="Swimming Pool" />
+          <h3>Swimming Pool</h3>
+          <p>Outdoor pool with sun loungers and towels provided.</p>
+        </div>
+        <div class="amenities-card">
+          <img src="" alt="Fitness Center" />
+          <h3>Fitness center</h3>
+          <p>State-of-the-art gym equipmebnt for your workout needs</p>
+        </div>
+        <div class="amenities-card">
+          <img src="" alt="Restaurant" />
+          <h3>Restaurant</h3>
+          <p>Enjoy gourmet meals and room service from our in-house chef.</p>
+        </div>
+        <div class="amenities-card">
+          <img src="" alt="Parking" />
+          <h3>Free Parking</h3>
+          <p>Spacious and secure Parking area for all guests.</p>
+        </div>
+        <div class="amenities-card">
+          <img src="" alt="Spa & Wellness" />
+          <h3>Spa & Wellness</h3>
+          <p>Relax with our prefessiobnal massage and spa services</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div id="gallery-grid" class="section-grid">
+        <img src="../test/images/groupsmilling.jpg" alt="Lobby" />
+        <img src="../test/images/groupsmilling.jpg" alt="Deluxe Roomn" />
+        <img src="../test/images/groupsmilling.jpg" alt="Pool Area" />
+        <img src="../test/images/groupsmilling.jpg" alt="Restaurant" />
+        <img src="../test/images/groupsmilling.jpg" alt="Fitness Center" />
+        <img src="../test/images/groupsmilling.jpg" alt="Spa Area" />
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <h2>Guests Reviews</h2>
+      <div id="reviews-grid" class="section-grid">
+        <div class="reviews-card">
+          <p>"Our stay at Alice was magical. The staff were very welcoming."</p>
+          <h4>~ Sara B.</h4>
+        </div>
+        <div class="reviews-card">
+          <p>
+            "Clean rooms, delicious breakfast, and pool with a view. Highly
+            recommended."
+          </p>
+          <h4>~ Jamal R.</h4>
+        </div>
+        <div class="reviews-card">
+          <p>
+            "Everything was perfect, from Check-in to Check-out. Will definitely
+            return"
+          </p>
+          <h4>~ Mei L.</h4>
+        </div>
+        <div class="reviews-card">
+          <p>
+            "Beautiful atmosphere, modern design, and great value for money."
+          </p>
+          <h4>~ Carlos D.</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div id="about-container">
+        <div class="about-text">
+          <h2>About Alice</h2>
+          <p>
+            Nestled in the heart of the city, Alice blends timeless elequence
+            with modern comfort. Whether you're here for business or leisure,
+            our hotel provides a serene escape from the everyday. With curated
+            rooms, exceptional dining, and personalize service, we make every
+            moment memorable.
+          </p>
+
+          <p>
+            Since our funding, we've welcomed guests from all around the world -
+            each one leaving as part of the Alice family. Our mission is
+            simplle: luxury without compromise, comfort without limits.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="" alt="Alice Exterior" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p><strong>Phone:</strong> +* (***) ***-****</p>
+          <p><strong>Email:</strong> hello@alice.com</p>
+        </div>
+        <p><strong>Address:</strong>*** Serenity Lane, ********* City, **</p>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src=""
+          width="100%"
+          height="250"
+          frameborder="0"
+          style="border: 0; border-radius: 10px; margin-top: 20px"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <form action="" class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea name="" id="" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <main class="footer-container">
+        <div class="footer-brand">
+          <h3>Alice</h3>
+          <p>To us your comfort is Golden.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">🌐</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="X">✖</a>
+          </div>
+        </div>
+      </main>
+      <div class="footer-bottom">
+        <p>&copy: 2025 Alice. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
