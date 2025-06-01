@@ -3,6 +3,17 @@
   --col: #fff;
   --ltecol: #bbb;
   --butbc: #6c5ce7;
+  --navbc: #111;
+  --col2: white;
+  --bookbc: #5848d0;
+  --bookinbc: #222;
+  --amenbc: #1a1a1a;
+  --revbc: #1b1b1b;
+  --contactbc: #0d0d0d;
+  --contactinfocol: #ccc;
+  --contactfbc: #444;
+  --contactfbtnhovbc: #666;
+  --footerbc: #0b0b0b;
 }
 html{
   scroll-behavior: smooth;
@@ -17,7 +28,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #111;
+  background: var(--navbc);
   padding: 15px 20px;
   position: sticky;
   top: 0;
@@ -42,71 +53,103 @@ body{
   z-index: 999;
 } */
 .nav-links a{
-  color: white;
+  color: var(--col2);
   margin: 0 10px;
   text-decoration: none;
 }
-
 .book-btn {
   background: var(--butbc);
-  color: white;
+  color: var(--col2);
   border: none;
   padding: 10px 16px;
   border-radius: 5px;
   cursor: pointer;
 }
 .book-btn:hover {
-   background-color: #5848d0;
+  background-color: var(--bookbc);
   transition: 0.6s;
 }
 .menu-toggle {
   display: none;
   font-size: 24px;
   background: none;
-  color: white;
+  color: var(--col2);
   border: none;
   cursor: pointer;
 }
 .hero {
-  /* background: url("../test/images/handsonpaper.jpg"); */
+  position: relative;
+  /* background: url("../images/supremeHero1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  color: var(--col);
+  overflow: hidden;
+  z-index: 1;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* background: linear-gradient(to button, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); */
+  z-index: -1;
 }
 .hero-text h1{
   font-size: 3em;
   margin-bottom: 20px;
 }
-.booking-form {
+
+ .booking-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: end;
+  margin-top: 2rem;
+  max-width: 1000px;
+  /* margin-inline: auto; */
+ }
+
+ .booking-form div {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-}
-.booking-form input, .booking-form button {
-  padding: 10px;
+  flex-direction: column;
+  /* gap: 10px; */
+ }
+ .booking-form input{
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: var(--bookinbc);
+  color: var(--col2);
   border: none;
   border-radius: 5px;
-}
-.booking-form input {
-  background: #222;
-  color: white;
-}
-.booking-form button {
+ }
+ .booking-form button{
+  padding: 0.7rem;
+  font-size: 1rem;
   background: var(--butbc);
-  color: white;
+  color: var(--col2);
+  border: none;
   cursor: pointer;
-}
+  border-radius: 5px;
+ }
 .booking-form button:hover{
-   background-color: #5848d0;
+  background-color: var(--bookbc);
   transition: 0.6s;
 }
 .section {
   padding: 40px 20px;
   background-color: var(--bc);
   color: var(--col);
-  text-align: center;
 }
 .section h2{
   font-size: 2em;
@@ -121,7 +164,7 @@ body{
   align-items: stretch; */
 }
 .room-card {
-  background-color: #1a1a1a;
+  background-color: var(--amenbc);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -160,7 +203,7 @@ body{
   background-color: var(--butbc);
   align-self: flex-start;
   margin: auto 16px 20px;
-  color: white;
+  color: var(--col2);
   border: none;
   padding: 12px 26px;
   /* margin-bottom: 20px; */
@@ -217,7 +260,7 @@ body{
   transition: 0.6s;
 }
 .reviews-card{
-  background-color: #1b1b1b;
+  background-color: var(--revbc);
   border-radius: 10px;
   padding: 25px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -263,8 +306,8 @@ body{
 }
 
 #contact {
-  background-color: #0d0d0d;
-  color: #fff
+  background-color: var(--contactbc);
+  color: var(--col);
 }
 #contact h2 {
   font-size: 2.5rem;
@@ -281,7 +324,7 @@ body{
 .contact-info{
   text-align: left;
   font-size: 1rem;
-  color: #ccc;
+  color: var(--contactinfocol);
 }
 .contact-info p {
   margin-bottom: 10px;
@@ -296,8 +339,8 @@ body{
 }
 .contact-form input, .contact-form textarea{
   padding: 12px 15px;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--amenbc);
+  color: var(--col);
   border-radius: 6px;
   border: 1px solid #333;
   font-size: 1rem;
@@ -307,8 +350,8 @@ body{
   height: 120px;
 }
 .contact-form button {
-  background-color: #444;
-  color: #fff;
+  background-color: var(--contactfbc);
+  color: var(--col);
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
@@ -317,11 +360,11 @@ body{
   transition: background-color 0.3 ease;
 }
 .contact-form button:hover{
-  background-color: #666;
+  background-color: var(--contactfbtnhovbc);
 }
 .footer {
-  background-color: #0b0b0b;
-  color: #ccc;
+  background-color: var(--footerbc);
+  color: var(--contactinfocol);
   padding: 50px 20px 30px;
   font-size: 0.95rem;
 }
@@ -334,16 +377,16 @@ body{
 }
 .footer h3,
 .footer h4 {
-  color: #fff;
+  color: var(--col);
   margin-bottom: 15px;
 }
 .footer a{
-  color: #ccc;
+  color: var(--contactinfocol);
   text-decoration: none;
   transition: color 0.3 ease;
 }
 .footer a:hover{
-  color: #fff;
+  color: var(--col);
 }
 .footer-brand p {
   max-width: 300px;
@@ -364,7 +407,7 @@ body{
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--bookinbc);
   padding-top: 20px;
 }
 @media (min-width: 768px) {
@@ -401,7 +444,7 @@ body{
     display: none;
     flex-direction: column;
     gap: 10px;
-    background: #111;
+    background: var(--navbc);
     position: absolute;
     top: 60px;
     left: 0;
@@ -416,10 +459,18 @@ body{
   .menu-toggle{
     display: inline;
   }
+  .hero {
+    background: url("../images/SupremeExt.jpg");
+  }
   .hero-text h1{
     font-size: 2em;
   }
   .booking-form{
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
+    gap: 0;
   }
+ .booking-form button{
+  margin-top: 20px;
+ } 
 }
