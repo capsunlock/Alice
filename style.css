@@ -460,7 +460,11 @@ body{
     display: inline;
   }
   .hero {
-    background: url("../images/SupremeExt.jpg");
+    background: url("images/SupremeExt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
   }
   .hero-text h1{
     font-size: 2em;
