@@ -13,6 +13,15 @@ Supreme-H was built to provide a *visually appealing and intuitive* web experien
 - *Backend:* N/A (Static Site)  
 - *Hosting:* GitHub Pages  
 
+## Author
+*CapsUnlock*  
+Web Developer & Designer
+
+[![GitHub](https://img.shields.io/badge/GitHub-capsunlock-181717?logo=github)](https://github.com/capsunlock)  
+[![Email](https://img.shields.io/badge/Email-email@example.com-D14836?logo=gmail)](mailto:capsonlock@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-View_Profile-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caps-unlock-168a19270/)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_Site-4caf50?logo=firefox&logoColor=white)](https://yourportfolio.com)
+
 ## 🎯 Features  
 - ✅ *Responsive Design* – Works seamlessly across devices  
 - ✅ *Smooth Navigation* – Intuitive user experience  
