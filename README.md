@@ -1,4 +1,3 @@
-# Alice
 # Supreme-H  
 
 Supreme-H is a *modern, interactive web project* designed to deliver a seamless and engaging user experience. Built with *HTML, CSS, and JavaScript, it focuses on **clean design, smooth navigation, and optimized performance*.  
@@ -23,8 +22,8 @@ Supreme-H was built to provide a *visually appealing and intuitive* web experien
 
 ## 📂 Installation & Usage  
 ### *Clone & Run Locally*  
-1. Clone the repository:
-2. Navigate to the project directory:
+1. Clone the repository: git clone https://github.com/capsunlock/test.git
+2. Navigate to the project directory: cd supreme-h
 3. Open index.html in your browser to explore the project.  
 
 ### *Development Setup*  
