@@ -45,6 +45,6 @@ Contributions are welcome! If you’d like to improve Supreme-H:
 - 🔹 *Additional Pages & Features* – Expand functionality.  
 
 ## 📄 License  
-This project is licensed under [Your License].  
+This project is licensed under the [MIT License](./LICENSE).
 
 ---
