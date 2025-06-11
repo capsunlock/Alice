@@ -22,7 +22,7 @@ Supreme-H was built to provide a *visually appealing and intuitive* web experien
 
 ## 📂 Installation & Usage  
 ### *Clone & Run Locally*  
-1. Clone the repository: git clone https://github.com/capsunlock/test.git
+1. Clone the repository: git clone https://github.com/capsunlock/supreme-h.git
 2. Navigate to the project directory: cd supreme-h
 3. Open index.html in your browser to explore the project.  
 
